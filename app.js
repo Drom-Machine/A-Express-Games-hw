@@ -12,7 +12,7 @@ const indexRouter = require('./router/indexRouter')
 app.use("/", indexRouter)
 
 
-//-------------------------------------------------todoRouter---
+//-------------------------------------------------gameRouter---
 const gameRouter = require('./router/gameRouter')
 //------http handler
 app.use("/api/game", gameRouter)
@@ -28,8 +28,8 @@ app.use(express.json())
 // app.set("views", path.join(__dirname, "views"));
 // app.set("view engine", "ejs");
 
-app.listen(3000, function(){
-    console.log('Server Up, I Am Invincible')
-})
+// app.listen(3000, function(){
+//     console.log('Server Up, I Am Invincible')
+// })
 
 module.exports = app
