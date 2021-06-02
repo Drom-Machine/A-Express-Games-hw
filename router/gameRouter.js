@@ -46,7 +46,7 @@ router.post("/create-new-game", function (req, res) {
         res.json({message: "Cannot leave text area blank"});
     } else if (gameIndex === -1) {
         res.json({message: "Game already exists, cannot add game"});
-        console.log(gameIndex)
+        
     }
 });
 
